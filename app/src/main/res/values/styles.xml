@@ -1,0 +1,90 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <style name="login">
+        <item name="android:visibility">gone</item>
+        <item name="android:fontFamily">Verdana-Bold</item>
+        <item name="android:alpha">0.70196078431373</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:layout_marginRight">6dp</item>
+        <item name="android:layout_marginTop">12dp</item>
+        <item name="android:layout_width">2dp</item>
+        <item name="android:layout_height">1dp</item>
+
+    </style>
+
+    <style name="layer_0">
+        <item name="android:alpha">0.90196078431373</item>
+        <item name="android:layout_marginStart">0dp</item>
+        <item name="android:layout_marginTop">0dp</item>
+        <item name="android:layout_width">22dp</item>
+        <item name="android:layout_height">33dp</item>
+    </style>
+
+    <style name="zg09hw">
+        <item name="android:src">@drawable/zg09hw</item>
+        <item name="android:layout_marginStart">-7dp</item>
+        <item name="android:layout_marginTop">0dp</item>
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_height">35dp</item>
+    </style>
+
+    <style name="login_button">
+        <item name="android:visibility">visible</item>
+        <item name="android:fontFamily">Verdana-Bold</item>
+        <item name="android:alpha">0.70196078431373</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#FFF</item>
+        <item name="android:layout_marginStart">6dp</item>
+        <item name="android:layout_marginTop">12dp</item>
+        <item name="android:layout_width">2dp</item>
+        <item name="android:layout_height">1dp</item>
+    </style>
+
+    <style name="rounded_rectangle_3">
+        <item name="android:src">@android:color/transparent</item>
+        <item name="android:layout_marginStart">3dp</item>
+        <item name="android:layout_marginTop">22dp</item>
+        <item name="android:layout_width">15dp</item>
+        <item name="android:layout_height">2dp</item>
+    </style>
+
+    <style name="username">
+        <item name="android:fontFamily">Verdana</item>
+        <item name="android:layout_gravity">center_horizontal|center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:alpha">0.7</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:layout_marginRight">9dp</item>
+        <item name="android:layout_marginTop">15dp</item>
+        <item name="android:layout_width">3dp</item>
+        <item name="android:layout_height">1dp</item>
+    </style>
+
+    <style name="forget_password">
+        <item name="android:fontFamily">Verdana</item>
+        <item name="android:alpha">0.85882352941177</item>
+        <item name="android:textColor">#FFF</item>
+
+        <item name="android:layout_width">5dp</item>
+        <item name="android:layout_height">1dp</item>
+    </style>
+
+    <style name="login_tab">
+        <item name="android:fontFamily">Verdana-Bold</item>
+        <item name="android:gravity">center</item>
+        <item name="android:alpha">0.70980392156863</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#FFF</item>
+        <item name="android:layout_width">623dp</item>
+        <item name="android:layout_height">1342dp</item>
+    </style>
+</resources>

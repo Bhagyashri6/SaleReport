@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.atminfotech.atmsales">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/atmlogo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="Sales"
+            android:parentActivityName=".HomeActivity" />
+        <activity android:name=".HomeActivity"></activity>
+        <activity
+            android:name=".AgeWiseActivity"
+            android:label="Age Wise"
+            android:parentActivityName=".HomeActivity" />
+        <activity
+            android:name=".AgeWiseDetails"
+            android:label="Age Wise Details"
+            android:parentActivityName=".AgeWiseActivity" />
+
+        <activity
+            android:name=".Order"
+            android:label="Order"
+            android:parentActivityName=".HomeActivity" />
+        <activity
+            android:name=".OrderDetail"
+
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:parentActivityName=".Order" />
+        <activity
+            android:name=".Purchase"
+            android:label="Purchase"
+            android:parentActivityName=".HomeActivity" />
+        <activity android:name=".PurchaseDetailActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            />
+        <activity
+            android:name=".StockActivity"
+            android:label="Stock"
+            android:hardwareAccelerated="true"
+            android:parentActivityName=".HomeActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".SalesDetailsActivity"
+
+          android:parentActivityName=".MainActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            />
+        <activity
+            android:name=".LoginActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".BankActivity"
+            android:label="Bank"
+            android:parentActivityName=".HomeActivity"></activity>
+    </application>
+
+</manifest>

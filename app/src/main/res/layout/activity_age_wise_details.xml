@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:weightSum="2"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:weightSum="2"
+        android:background="@color/colorPrimary"
+        android:layout_weight="0.2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <TextView
+            android:layout_weight="1.5"
+            android:layout_margin="10dp"
+            android:id="@+id/title"
+            android:ellipsize="end"
+            android:lines = "1"
+            android:ems = "3"
+            android:textAppearance="@style/TextAppearance.AppCompat.SearchResult.Title"
+            android:text="Company Name"
+            android:textColor="#fff"
+            android:gravity="center_vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:id="@+id/mail"
+            android:layout_weight="0.5"
+            android:layout_width="0dp"
+            android:layout_margin="10dp"
+            android:clickable="true"
+            android:tint="#FFF"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_mail"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+        <LinearLayout
+            android:layout_weight="0.2"
+            android:weightSum="5"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal">
+            <LinearLayout
+
+                android:layout_weight="1"
+                android:weightSum="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp">
+                    <TextView
+                      android:textStyle="bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="Bill No." />
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="1"
+                android:weightSum="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp">
+                    <TextView
+                        android:textStyle="bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="Bill Date" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="1"
+                android:weightSum="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp">
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="Days"
+                        android:id="@+id/textView2" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="1"
+                android:weightSum="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp">
+                    <TextView
+                        android:textStyle="bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="Amount" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="1"
+                android:weightSum="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp">
+                    <TextView
+                        android:textStyle="bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                       android:text="Balance" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="1.4"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <ListView
+            android:id="@+id/listvv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_weight="0.2"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="0dp">
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:text="Total"
+            android:textColor="#FFF"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/total"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:text="0.00"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:textColor="#FFF"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+    </LinearLayout>
+

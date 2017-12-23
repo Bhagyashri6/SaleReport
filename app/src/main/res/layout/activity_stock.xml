@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_stock"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="3"
+    android:layout_margin="2dp"
+    tools:context="com.atminfotech.atmsales.StockActivity">
+
+
+    <LinearLayout
+        android:weightSum="3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="0.45">
+
+        <AutoCompleteTextView
+            android:id="@+id/autotextview"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/searchborder"
+            android:hint="Enter group name"
+            android:paddingLeft="10dp" />
+
+        <Spinner
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:paddingLeft="5dp"
+            android:background="@drawable/searchborder"
+            android:id="@+id/spinner"/>
+        <Button
+            android:id="@+id/search"
+
+            android:layout_weight="0.9"
+            android:backgroundTint="@color/colorPrimary"
+            android:background="@drawable/searchborder"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="Show"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="0.3"
+        android:weightSum="2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal">
+        <LinearLayout
+
+            android:layout_weight="1"
+            android:weightSum="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+                <TextView
+                    android:textStyle="bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:textColor="#fff"
+                    android:text="Item Name" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="1"
+            android:weightSum="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+                <TextView
+                    android:textStyle="bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:paddingRight="10dp"
+                    android:textColor="#fff"
+                    android:text="Quantity" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1.65"
+        android:layout_height="0dp"
+        >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/listview"
+                android:divider="#fff"
+                android:visibility="gone"
+                android:dividerHeight="2dp"></ListView>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="No Data in Database"
+                android:visibility="gone"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:id="@+id/data"/>
+        </FrameLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
